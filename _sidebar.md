@@ -1,4 +1,4 @@
 - [主页](README.md)
-- [demo页](demo.md)
+- [docsify-note](https://mg0324.github.io/docsify-note/#/)
 - [关于我](http://mg.meiflower.top)
 

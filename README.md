@@ -1,2 +1,38 @@
+## 介绍
+[docsify-template](https://github.com/mg0324/docsify-template.git)是一个docsify的模板仓库，集成好了常用的插件。
 
+您只需要`clone`后，在模板基础上调整配置值为自己的即可快速构建您的在线笔记或文档的基础版本。
+```
+git clone https://github.com/mg0324/docsify-template.git
+```
 
+真正让您只关注分享内容的书写，now enjoy it! 
+
+查看示例，请到[docsify-note](https://mgang.gitee.io/docsify-note/)
+
+## 已集成特性
+1. vue主题 - 可更换为其他主题
+2. 搜索 - 官方内置特性
+3. 图片放大 - 官方内置特性
+4. 代码复制 - [docsify-copy-code](https://www.npmjs.com/package/docsify-copy-code)
+5. 字数统计 - [docsify-count](https://www.npmjs.com/package/docsify-count)
+6. 分页导航 - [docsify-pagination](https://www.npmjs.com/package/docsify-pagination)
+7. 侧边栏扩展与折叠 - [docsify-sidebar-collapse](https://www.npmjs.com/package/docsify-sidebar-collapse)
+8. 卜蒜子显示网站访问量 - 默认开启 - [docsify-busuanzi](https://www.npmjs.com/package/docsify-busuanzi)
+9. 页脚footer - [docsify-footer-enh](https://www.npmjs.com/package/docsify-footer-enh)
+10. 最近更新时间 - [docsify-updated](https://www.npmjs.com/package/docsify-updated)
+11. flexible alerts提示信息 - [docsify-plugin-flexible-alerts](https://www.npmjs.com/package/docsify-plugin-flexible-alerts)
+12. 阅读进度条美化 - [docsify-progress](https://www.npmjs.com/package/docsify-progress)
+13. 问答faq手风琴 - [docsify-accordion](https://www.npmjs.com/package/docsify-accordion)
+14. tab选项卡 - [docsify-tabs](https://www.npmjs.com/package/docsify-tabs)
+15. 回到顶部 - [docsify-backTop](https://www.npmjs.com/package/docsify-backTop)
+16. 文章内右侧目录toc - [docsify-plugin-toc](https://www.npmjs.com/package/docsify-plugin-toc)
+17. 百度统计 - [docsify-baidu-tj](https://www.npmjs.com/package/docsify-baidu-tj)
+18. giscus评论 - [docsify-giscus](https://www.npmjs.com/package/docsify-giscus)
+19. html预览demo - [docsify-demo](https://www.npmjs.com/package/docsify-demo)
+20. 引入远程md - [docsify-remote-markdown](https://www.npmjs.com/package/docsify-remote-markdown)
+21. drawio文件预览 - [docsify-drawio](https://www.npmjs.com/package/docsify-drawio)
+22. 自动加空格 - [docsify-pangu](https://www.npmjs.com/package/docsify-pangu)
+23. 图形语音全家桶 - [docsify-kroki](https://www.npmjs.com/package/docsify-kroki)
+24. 更新日志模块 - 以navbar形式实现
+25. 使用推荐的cdn jsdelivr - 保证国内外稳定快速访问
