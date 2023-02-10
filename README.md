@@ -33,6 +33,6 @@ git clone https://github.com/mg0324/docsify-template.git
 20. 引入远程md - [docsify-remote-markdown](https://www.npmjs.com/package/docsify-remote-markdown)
 21. drawio文件预览 - [docsify-drawio](https://www.npmjs.com/package/docsify-drawio)
 22. 自动加空格 - [docsify-pangu](https://www.npmjs.com/package/docsify-pangu)
-23. 图形语音全家桶 - [docsify-kroki](https://www.npmjs.com/package/docsify-kroki)
+23. 图形语言全家桶 - [docsify-kroki](https://www.npmjs.com/package/docsify-kroki)
 24. 更新日志模块 - 以navbar形式实现
 25. 使用推荐的cdn jsdelivr - 保证国内外稳定快速访问
