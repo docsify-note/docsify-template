@@ -36,3 +36,4 @@ git clone https://github.com/mg0324/docsify-template.git
 23. 图形语言全家桶 - [docsify-kroki](https://www.npmjs.com/package/docsify-kroki)
 24. 更新日志模块 - 以navbar形式实现
 25. 使用推荐的cdn jsdelivr - 保证国内外稳定快速访问
+26. 自定义标题后显示最新文档版本号 - 以`badge`样式实现

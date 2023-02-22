@@ -1,0 +1,43 @@
+:root {
+    --docsifytabs-border-color: #ededed;
+    --docsifytabs-tab-highlight-color: #42b983;
+}
+
+.accordion.active {
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 3px solid #42b983 !important;
+}
+
+.sidebar-toggle {
+    left: 15px !important;
+    bottom: 15px !important;
+}
+
+.markdown-section {
+    max-width: 90% !important;
+}
+
+aside.toc-nav {
+    margin-right: 10px !important;
+    width: 200px !important;
+}
+
+@media only screen and (min-width: 1300px) {
+    section.content {
+        padding-right: 200px !important;
+    }
+}
+
+.mg-badge {
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    background-color: #42b983;
+    border-radius: 10%;
+    position: relative;
+    top: -15px;
+    left: 0px;
+    font-size: 15px;
+}

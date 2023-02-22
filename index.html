@@ -8,24 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta name="renderer" content="webkit">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <style>
-    :root {
-      --docsifytabs-border-color: #ededed;
-      --docsifytabs-tab-highlight-color: #42b983;
-    }
-    .accordion.active {
-        background: rgba(0, 0, 0, 0.1);
-        border-left: 3px solid #42b983 !important;
-    }
-    .sidebar-toggle {
-      left: 15px !important;
-      bottom: 15px !important;
-    }
-    .my-img{
-      text-align: left;
-      border: 1px solid #ddd;
-    }
-  </style>
+  <link rel="stylesheet" href="static/css/ext.css">
   <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
   <!--[if lt IE 9]>
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -36,7 +19,7 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'docsify-template',
+      name: 'docsify-template<span class="mg-badge">1.0.2</span>',
       repo: 'https://github.com/mg0324/docsify-template.git',
       coverpage: false,
       loadNavbar: true,
@@ -47,9 +30,6 @@
       subMaxLevel: 5,
       //basePath: 'http://mg.meiflower.top/',
       sidebarDisplayLevel: 5, // set sidebar display level
-      // plantuml: {
-      //   skin: 'default'
-      // },
       count:{
         countable:true,
         fontsize:'0.9em',
@@ -200,12 +180,6 @@
         target: 'h1, h2, h3, h4, h5',
         ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
       },
-      // docsify-toc
-      // toc: {
-      //   scope: '.markdown-section',
-      //   headings: 'h1, h2, h3, h4, h5, h6',
-      //   title: '目录',
-      // },
       // 百度统计ID
       baiduTjId: "6b106096cc897dbbba878967ab356b7d",
       // 开启busuanzi
@@ -335,41 +309,27 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <!-- docsify-backTop -->
   <script src="https://cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script>
-  <!-- docsify-plantuml -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-plantuml/dist/docsify-plantuml.min.js"></script> -->
-
-  <!-- docsify-toc -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-toc@1.0.0/dist/toc.css"> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-toc@1.0.0/dist/toc.js"></script> -->
-
   <!-- docsify-plugin-toc -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/light.css">
   <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
-  
   <!-- 百度统计 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-baidu-tj@1.0.2/dist/docsify-baidu-tj.min.js"></script>
-
   <!-- giscus评论  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/giscus.css">
   <script src="https://cdn.jsdelivr.net/npm/docsify-giscus@1.0.2/dist/docsify-giscus.min.js"></script>
-
   <!-- GitTalk评论 -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-gitalk@1.0.0/dist/docsify-gitalk.min.js"></script> -->
-
   <!-- html preview demo-->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.css"/>
   <script src="//cdn.jsdelivr.net/npm/docsify-demo@latest/dist/index.min.js"></script>
-  
   <!-- remote-markdown -->
   <script src="//cdn.jsdelivr.net/npm/docsify-remote-markdown/dist/docsify-remote-markdown.min.js"></script>
-  
   <!-- docsify-drawio -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-drawio/viewer.min.js"></script>
   <script src='https://cdn.jsdelivr.net/npm/docsify-drawio/drawio.js'></script>
-
   <!-- docsify-pangu 加空格-->
   <script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
   <!-- docsify-kroki 支持全热门图形化语言-->
