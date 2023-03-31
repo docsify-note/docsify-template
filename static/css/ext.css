@@ -41,3 +41,13 @@ aside.toc-nav {
     left: 0px;
     font-size: 15px;
 }
+
+@media only screen and (max-width: 768px) {
+    .sidebar-pin{
+        z-index: -1;
+    }
+}
+.sidebar-toggle {
+    left: 8px !important;
+    bottom: 12px !important;
+}
