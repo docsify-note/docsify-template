@@ -6,9 +6,14 @@
 git clone https://github.com/mg0324/docsify-template.git
 ```
 
-真正让您只关注分享内容的书写，now enjoy it! 
+真正让您只关注分享内容的书写，**now enjoy it**! 
 
 查看示例，请到[docsify-note](https://mgang.gitee.io/docsify-note/)
+
+## 微信交流群
+欢迎加入微信交流群，请加我微信并备注[`docsify-note交流`]，我会拉您进群！
+
+<img style="width:250px;" src="https://mg.meiflower.top/oss/docsify-note/mango-wx.jpeg">
 
 ## 已集成特性
 1. vue主题 - 可更换为其他主题
@@ -38,3 +43,4 @@ git clone https://github.com/mg0324/docsify-template.git
 25. 使用推荐的cdn jsdelivr - 保证国内外稳定快速访问
 26. 自定义标题后显示最新文档版本号 - 以`badge`样式实现
 27. 自定义广告推荐 - [docsify-ads](https://www.npmjs.com/package/docsify-ads)
+28. 支持匿名评论 - [docsify-mango-valine](https://www.npmjs.com/package/docsify-mango-valine)
