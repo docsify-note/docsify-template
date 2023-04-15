@@ -44,3 +44,6 @@ git clone https://github.com/mg0324/docsify-template.git
 26. 自定义标题后显示最新文档版本号 - 以`badge`样式实现
 27. 自定义广告推荐 - [docsify-ads](https://www.npmjs.com/package/docsify-ads)
 28. 支持匿名评论 - [docsify-mango-valine](https://www.npmjs.com/package/docsify-mango-valine)
+29. 增加网站的[favicon](https://favicon.io/favicon-generator/)
+30. 内嵌PDF预览 - [docsify-pdf-embed-plugin](https://www.npmjs.com/package/docsify-pdf-embed-plugin)
+31. 显示仓库共享者 - [docsify-contributors](https://www.npmjs.com/package/docsify-contributors)

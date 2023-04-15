@@ -1,27 +1,33 @@
 # 更新日志
 
-## 1.0.7(2023-04-12)
+## 1.1.0(2023-04-15)
+1. 增加网站的[favicon](https://favicon.io/favicon-generator/)。
+2. 集成[docsify-contributors](https://www.npmjs.com/package/docsify-contributors)插件，显示仓库共享者。
+3. 集成[docsify-pdf-embed-plugin](https://www.npmjs.com/package/docsify-pdf-embed-plugin)插件，显示内嵌pdf。
+4. 发布`1.1.0`版本。
+
+## 2023-04-12
 1. index.html更新docsify版本到4.13.0。
 
-## 1.0.6(2023-04-05)
+## 2023-04-05
 1. 处理cdn被墙超时的问题，修改为gcore。
 
-## 1.0.5(2023-04-02)
+## 2023-04-02
 1. 更换评论为`docsify-mango-valine`，支持匿名评论。
 
 
-## 1.0.4(2023-03-31)
+## 2023-03-31
 1. 修复小屏时，目录图标点击不方便的问题。
 
 
-## 1.0.3(2023-02-25)
+## 2023-02-25
 1. 增加七牛云的推广广告，并维护首页。
 
-## 1.0.2(2023-02-22)
+## 2023-02-22
 1. 将`index.html`页内的自定义样式抽出到`ext.css`并引入。
 2. 支持`mg-badge`徽章样式，使用在`title`里显示文档最新版本。
 
-## 1.0.1(2023-02-22)
+## 2023-02-22
 1. 搜索配置修复，修改为`search:'auto'`，细节配置请查询[官方文档](https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search)。
 
 ## 1.0.0(2023-02-10)

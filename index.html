@@ -14,12 +14,16 @@
     <script src="https://gcore.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <script src="https://gcore.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/icon/favicon-16x16.png">
+  <link rel="manifest" href="static/icon/site.webmanifest">
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'docsify-template<span class="mg-badge">1.0.7</span>',
+      name: 'docsify-template<span class="mg-badge">1.1.0</span>',
       repo: 'https://github.com/mg0324/docsify-template.git',
       coverpage: false,
       loadNavbar: true,
@@ -43,110 +47,13 @@
         successText: '复制成功'
       },
       footer: {
-        copy: '<span>mango mei &copy; 2022</span>',
+        copy: '<span>mango mei &copy; 2023</span>',
         auth: '粤ICP备17082965号',
         pre: '',
         style: 'text-align: center;',
         class: 'className'
       },
-      vueComponents: {
-        'card-link': {
-          template: `
-            <a :href="href" target="_blank">
-              {{title}}
-            </a>
-          `,
-          props:["id","title"],
-          computed: {
-            href(){
-              return "https://mg.meiflower.top/cardview/index.html?id="+this.id;
-            }
-          },
-          data() {
-            return {
-              
-            }
-          }
-        },
-        'card-area': {
-          template: `
-           <div>
-            <iframe  :src="href" :style="{width:cardWidth,height:cardHeight}"></iframe>
-           </div>
-          `,
-          props:["id","height","width"],
-          computed: {
-            theId(){
-              return "card_" + this.id;
-            },
-            href(){
-              return "https://mg.meiflower.top/cardview/index.html?id="+this.id;
-            },
-            cardHeight(){
-              var result = "400px";
-              if(this.height){
-                result = this.height;
-              }
-              return result;
-            },
-            cardWidth(){
-              var result = "100%";
-              if(this.width){
-                result = this.width;
-              }
-              return result;
-            }
-          },
-          created() {
-            
-          },
-          data() {
-            return {
-              
-            }
-          }
-        },
-        'card-area-list': {
-          template: `
-           <div>
-            <iframe v-for="href in hrefs" :src="href" :style="{width:cardWidth,height:cardHeight,float:'left',marginRight:'5px'}"></iframe>
-           </div>
-          `,
-          props:["ids","height","width"],
-          computed: {
-            hrefs(){
-              var list = [];
-              var arr = this.ids.split(",");
-              for(var index in arr){
-                list.push("http://mg.meiflower.top/cardview/index.html?id="+arr[index]);
-              }
-              return list;
-            },
-            cardHeight(){
-              var result = "400px";
-              if(this.height){
-                result = this.height;
-              }
-              return result;
-            },
-            cardWidth(){
-              var result = "100%";
-              if(this.width){
-                result = this.width;
-              }
-              return result;
-            }
-          },
-          created() {
-            
-          },
-          data() {
-            return {
-              
-            }
-          }
-        }
-      },
+      vueComponents: {},// 可自定义
       timeUpdater: {
         text: "<div align='right' width='100%' style='color:gray;font-size:16px;margin-top:10px;'>最后更新时间: {docsify-updated}</div>",
         formatUpdated: "{YYYY}-{MM}-{DD} {HH}:{mm}",
@@ -273,12 +180,60 @@
               } else {
                 return `<div class='drawio-code'>${code}</div>`
               }
-            } else {
+            } else if(lang === 'pdf'){
+              var pdf_renderer = function(code, lang, verify) {
+                  function unique_id_generator(){
+                      function rand_gen(){
+                          return Math.floor((Math.random()+1) * 65536).toString(16).substring(1);
+                      }
+                      return rand_gen() + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + rand_gen() + rand_gen();
+                  }
+                  if(lang && !lang.localeCompare('pdf', 'en', {sensitivity: 'base'})){
+                      if(verify){
+                          return true;
+                      }else{
+                          var divId = "markdown_code_pdf_container_" + unique_id_generator().toString();
+                          var container_list = new Array();
+                          if(localStorage.getItem('pdf_container_list')){
+                              container_list = JSON.parse(localStorage.getItem('pdf_container_list'));	
+                          }
+                          container_list.push({"pdf_location": code, "div_id": divId});
+                          localStorage.setItem('pdf_container_list', JSON.stringify(container_list));
+                          return (
+                              '<div style="margin-top:'+ PDF_MARGIN_TOP +'; margin-bottom:'+ PDF_MARGIN_BOTTOM +';" id="'+ divId +'">'
+                                  + '<a href="'+ code + '"> Link </a> to ' + code +
+                              '</div>'
+                          );
+                      } 
+                  }
+                  return false;
+              }
+              if(pdf_renderer(code, lang, true)){
+                return pdf_renderer(code, lang, false);
+              }
+            }else {
               return this.origin.code.apply(this, arguments);
             }
           }
         }
       },
+      contributors: {
+        repo: 'mg0324/docsify-template',
+        ignores: [],
+        style: {
+            color: '#ffffff',
+            bgColor: '#404040'
+        },
+        image: {
+            size: 30,
+            isRound: true,
+            margin: '0.5em'
+        },
+        load: {
+            isOpen: true,
+            color: "#009999"
+        }
+      }
       //gitalk评论
       // gitalk: {
       //   clientID: 'a80e57a9ad7a92dd2c8d',
@@ -399,5 +354,10 @@
   <script src="//gcore.jsdelivr.net/npm/docsify-kroki"></script>
   <!-- docsify ads -->
   <script src="//gcore.jsdelivr.net/npm/docsify-ads@1.0.2/dist/docsify-ads.min.js"></script>
+  <!-- docsify-contributors -->
+  <script src="//gcore.jsdelivr.net/npm/docsify-contributors@latest/dist/index.min.js"></script>
+  <!-- docsify pdf embed -->
+  <script src="//gcore.jsdelivr.net/npm/pdfobject@2.2.8/pdfobject.min.js"></script> 
+  <script src="//gcore.jsdelivr.net/npm/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
 </body>
 </html>
