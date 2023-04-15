@@ -4,7 +4,7 @@
 1. 增加网站的[favicon](https://favicon.io/favicon-generator/)。
 2. 集成[docsify-contributors](https://www.npmjs.com/package/docsify-contributors)插件，显示仓库共享者。
 3. 集成[docsify-pdf-embed-plugin](https://www.npmjs.com/package/docsify-pdf-embed-plugin)插件，显示内嵌pdf。
-4. 发布`1.1.0`版本。
+4. 发布[1.1.0](https://github.com/mg0324/docsify-template/releases/tag/1.1.0)版本。
 
 ## 2023-04-12
 1. index.html更新docsify版本到4.13.0。
@@ -31,6 +31,6 @@
 1. 搜索配置修复，修改为`search:'auto'`，细节配置请查询[官方文档](https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search)。
 
 ## 1.0.0(2023-02-10)
-1. 从docsify-note中积累经验回馈到模板中，发布1.0.0版本。
+1. 从docsify-note中积累经验回馈到模板中，发布[1.0.0](https://github.com/mg0324/docsify-template/releases/tag/1.0.0)版本。
 2. 完成主页内容，列出模板内集成的特性。
 3. 添加`.nojekyll`防止`github pages`忽略下划线开头的资源。
