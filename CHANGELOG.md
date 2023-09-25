@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.1.1(2023-09-25)
+1. 发布发布[1.1.1](https://github.com/mg0324/docsify-template/releases/tag/1.1.1)版本。
+2. 首页增加快速开始，基于`docsify-note-cli`的脚手架工具初始化。
+
 ## 1.1.0(2023-04-15)
 1. 发布[1.1.0](https://github.com/mg0324/docsify-template/releases/tag/1.1.0)版本。
 2. 增加网站的[favicon](https://favicon.io/favicon-generator/)。
