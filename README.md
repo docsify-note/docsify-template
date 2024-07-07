@@ -63,3 +63,4 @@ docsify s
 29. 增加网站的[favicon](https://favicon.io/favicon-generator/)
 30. 内嵌PDF预览 - [docsify-pdf-embed-plugin](https://www.npmjs.com/package/docsify-pdf-embed-plugin)
 31. 显示仓库共享者 - [docsify-contributors](https://www.npmjs.com/package/docsify-contributors)
+32. 集成认证插件 - [docsify-auth](https://www.npmjs.com/package/docsify-auth)

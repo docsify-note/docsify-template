@@ -233,6 +233,12 @@
             isOpen: true,
             color: "#009999"
         }
+      },
+      auth: {
+        enable: true, // 是否开启
+        password: "e10adc3949ba59abbe56e057f20f883e", // md5密码
+        title: "请输入密码以访问文档：", // 设置标题
+        paths: ["^/bookmark"] // 需要认证的路径，支持正则表达式匹配
       }
       //gitalk评论
       // gitalk: {
@@ -290,6 +296,7 @@
       //     });
       //   }
       // ]
+
     }
   </script>
   <script src="//gcore.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
@@ -359,5 +366,7 @@
   <!-- docsify pdf embed -->
   <script src="//gcore.jsdelivr.net/npm/pdfobject@2.2.8/pdfobject.min.js"></script> 
   <script src="//gcore.jsdelivr.net/npm/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
+  <!-- docsify-auth -->
+  <script src="//gcore.jsdelivr.net/npm/docsify-auth@1.0.0/dist/docsify-auth.min.js"></script>
 </body>
 </html>

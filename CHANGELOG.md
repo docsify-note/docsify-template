@@ -1,5 +1,8 @@
 # 更新日志
 
+## 1.1.2(2024-07-07)
+1. 集成docsify-auth来实现页面认证，可配置。
+
 ## 1.1.1(2023-09-25)
 1. 发布发布[1.1.1](https://github.com/mg0324/docsify-template/releases/tag/1.1.1)版本。
 2. 首页增加快速开始，基于`docsify-note-cli`的脚手架工具初始化。
