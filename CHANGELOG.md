@@ -2,6 +2,9 @@
 
 ## 1.1.2(2024-07-07)
 1. 集成docsify-auth来实现页面认证，可配置。
+2. 拆分出特性篇。
+3. index.html移除掉backTop插件，该插件资源以被作者删除。
+4. 更新cdn为cdn.jsdelivr.net。
 
 ## 1.1.1(2023-09-25)
 1. 发布发布[1.1.1](https://github.com/mg0324/docsify-template/releases/tag/1.1.1)版本。
